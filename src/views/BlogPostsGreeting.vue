@@ -14,7 +14,6 @@ import api from '@/apis/blogPosts'
 import { ref,  onMounted } from 'vue';
 import { useRouter } from 'vue-router';
 
-
 const blogPosts = ref([]);
 const router = useRouter()
 
@@ -27,8 +26,8 @@ async function loadBlogPosts() {
     } catch(error) {
 console.error('Failed to fetch blog posts:',error)
     }
-    
 }
+
 
 function goToRandomBlogPost(){
     if (blogPosts.value.length === 0) {

@@ -4,6 +4,7 @@
             <BlogPostList></BlogPostList>
         </aside>
         <main class="blog-post-content-with-sidebar">
+
             <router-view class="blog-post-content" v-slot="{Component}">
                 <transition mode="out-in"
                 enter-active-class="animate__animated animate__rotateInDownLeft animate__faster"
@@ -11,13 +12,14 @@
                     <component :is="Component" :key="route.path"></component>
                 </transition>
             </router-view>
+
             <router-view name="sidebar"></router-view>
         </main>
     </div>
 </template>
 
 <script setup>
-import BlogPostList from '@/Components/BlogPostList.vue'
+import BlogPostList from '@/components/BlogPostList.vue'
 </script>
 
 <style lang="scss" scoped>
@@ -39,6 +41,4 @@ import BlogPostList from '@/Components/BlogPostList.vue'
         }
     }
 }
-
-
 </style>
