@@ -1,5 +1,5 @@
 <template>
-   <nav>
+    <nav>
         <router-link :to="{ name: 'home' }">Home</router-link>
         <router-link :to="{ name: 'blogPosts' }">Blog Posts</router-link>
         <router-link :to="{ name: 'about' }">About</router-link>
@@ -7,7 +7,6 @@
 </template>
 
 <script setup>
-import Navigation from '@/Components/Navigation.vue';
 
 </script>
 
@@ -33,7 +32,5 @@ nav {
         box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
         transform: translateY(-2px);
     }
-
 }
-
 </style>
