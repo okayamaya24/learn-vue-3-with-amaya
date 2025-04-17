@@ -11,7 +11,7 @@
 </template>
 
 <script setup>
-import BlogPostList from '@/Components/BlogPostList.vue'
+import BlogPostList from '@/components/BlogPostList.vue'
 </script>
 
 <style lang="scss" scoped>
