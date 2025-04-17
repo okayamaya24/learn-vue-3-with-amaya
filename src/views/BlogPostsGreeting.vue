@@ -25,7 +25,7 @@ async function loadBlogPosts() {
     try {
         blogPosts.value = await api.findAll()
     } catch(error) {
-console.error('Failed to fetch blog posts:',error)
+console.error('Failed to fetch blog posts:', error)
     }
     
 }

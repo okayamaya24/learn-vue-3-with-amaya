@@ -11,7 +11,6 @@ import { onBeforeRouteLeave } from 'vue-router';
 onBeforeRouteLeave((to, from) => {
     window.alert('Don\'t forget to like us on Facebook')
 })
-
 </script>
 
 <style lang="scss" scoped></style>

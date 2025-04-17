@@ -5,7 +5,7 @@
         <!-- <router-link :to="{ name: 'about' }">About</router-link> -->
          <a 
          href="#" 
-         @click.prevent="gotoAbout" 
+         @click.prevent="goToAbout" 
          :class="{'router-link-active': $route.name === 'about'}">
          About
         </a>
@@ -17,7 +17,7 @@ import { useRouter } from 'vue-router';
 
 const router = useRouter();
 
-function gotoAbout() {
+function goToAbout() {
     router.push({name: 'about'});
 }
 </script>
