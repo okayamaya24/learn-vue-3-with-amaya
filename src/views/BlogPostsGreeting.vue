@@ -11,26 +11,25 @@
 
 <script setup>
 import api from '@/apis/blogPosts'
-import { ref,  onMounted } from 'vue';
-import { useRouter } from 'vue-router';
+import { ref, onMounted } from 'vue'
+import { useRouter } from 'vue-router'
 
-
-const blogPosts = ref([]);
+const blogPosts = ref([])
 const router = useRouter()
 
-
+// Fetch all blog posts on component mount
 onMounted(loadBlogPosts)
 
 async function loadBlogPosts() {
     try {
         blogPosts.value = await api.findAll()
-    } catch(error) {
-console.error('Failed to fetch blog posts:', error)
+    } catch (error) {
+        console.error('Failed to fetch blog posts:', error)
     }
-    
 }
 
-function goToRandomBlogPost(){
+// Function to navigate to a random blog post
+function goToRandomBlogPost() {
     if (blogPosts.value.length === 0) {
         alert('No blog posts available!')
         return
