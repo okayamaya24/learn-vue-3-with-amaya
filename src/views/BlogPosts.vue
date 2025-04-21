@@ -5,7 +5,7 @@
         </aside>
         <main class="blog-post-content-with-sidebar">
 
-            <router-view class="blog-post-content" v-slot="{Component}">
+            <router-view class="blog-post-content" v-slot="{Component, route }">
                 <transition mode="out-in"
                 enter-active-class="animate__animated animate__rotateInDownLeft animate__faster"
                     leave-active-class="animate__animated animate__rotateOutUpRight animate__faster">

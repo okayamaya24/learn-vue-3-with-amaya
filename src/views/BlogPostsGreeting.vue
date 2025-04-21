@@ -11,7 +11,7 @@
 
 <script setup>
 import api from '@/apis/blogPosts'
-import { ref,  onMounted } from 'vue';
+import { ref, onMounted } from 'vue';
 import { useRouter } from 'vue-router';
 
 const blogPosts = ref([]);

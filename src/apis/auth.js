@@ -1,14 +1,15 @@
-import {ref} from 'vue'
+import { ref } from 'vue'
 
-const isAuthenticated = ref(false)
+const isAuthenticated = ref(false) // A global state that tracks whether the user is logged in
 
-const login = async(username, password) => {
-
-    isAuthenticated.value = true
+const login = async (username, password) => {
+  // Simulate a successful login
+  isAuthenticated.value = true
 }
 
 const logout = async () => {
-    isAuthenticated.value = false
+  // Simulate a successful logout
+  isAuthenticated.value = false
 }
 
-export {isAuthenticated, login, logout}
+export { isAuthenticated, login, logout }
